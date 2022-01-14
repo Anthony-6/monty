@@ -12,19 +12,17 @@ int isint(char *str, int line_number)
 	if (str == NULL)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
-		exit(EXIT_FAILURE);
+		return (-1);
 	}
 	if (str[0] == '-')
-	{
 		i = 1;
-	}
-	for (; str[i] == 0; i++)
+	for (; str[i] != 0; i++)
 	{
 		if (isdigit(str[i]) == 0)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
-			exit(EXIT_FAILURE);
+			return (-1);
 		}
 	}
-	return (0);
+	return (1);
 }
