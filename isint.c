@@ -16,7 +16,7 @@ int isint(char *str, int line_number)
 	}
 	if (str[0] == '-')
 		i = 1;
-	for (; str[i] != 0; i++)
+	for (; str[i]; i++)
 	{
 		if (isdigit(str[i]) == 0)
 		{
