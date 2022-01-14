@@ -37,8 +37,11 @@ int main(int argc, char **argv)
 			break;
 		line_number++;
 	}
-	free(line);
+	if (line)
+		free(line);
 	fclose(file_to_open);
+	if (i == 0)
+		exit(EXIT_FAILURE);
 	exit(EXIT_SUCCESS);
 	return (0);
 }
