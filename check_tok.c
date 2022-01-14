@@ -37,6 +37,6 @@ int check_tok(stack_t **stack, char *line, int line_number)
 				op_code[i].f(stack, line_number);
 			return (1);
 		}
-	fprintf(stderr, "L%d: unknow instruction %s\n", line_number, token_op_code);
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, token_op_code);
 	return (0);
 }
