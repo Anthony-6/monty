@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 	if (file_to_open == NULL)
 	{
 		fprintf(stderr, "Can't open file %s\n", argv[1]);
+		exit(EXIT_FAILURE);
 	}
 	while ((line_read = getline(&line, &buffer, file_to_open)) != -1)
 	{
@@ -38,7 +39,8 @@ int main(int argc, char **argv)
 	}
 	free(line);
 	fclose(file_to_open);
-	exit(EXIT_FAILURE);
+	if (i == 0)
+		exit(EXIT_FAILURE);
 	exit(EXIT_SUCCESS);
 	return (0);
 }
