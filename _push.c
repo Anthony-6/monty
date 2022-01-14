@@ -16,7 +16,7 @@ void add_node(stack_t **stack, unsigned int line_number)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
-	}	
+	}
 	newnode->n = line_number;
 	newnode->next = *stack;
 	newnode->prev = NULL;
