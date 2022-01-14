@@ -39,8 +39,6 @@ int main(int argc, char **argv)
 	}
 	free(line);
 	fclose(file_to_open);
-	if (i == 0)
-		exit(EXIT_FAILURE);
 	exit(EXIT_SUCCESS);
 	return (0);
 }
