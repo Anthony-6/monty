@@ -37,4 +37,5 @@ int isint(char *str, int line_number);
 int check_tok(stack_t **stack, char *line, int line_number);
 void add_node(stack_t **stack, unsigned int line_number);
 void print_stack(stack_t **stack, unsigned int line_number);
+void free_stack(stack_t **stack);
 #endif

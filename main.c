@@ -38,6 +38,7 @@ int main(int argc, char **argv)
 		line_number++;
 	}
 	free(line);
+	free_stack(&list);
 	fclose(file_to_open);
 	exit(EXIT_SUCCESS);
 	return (0);
