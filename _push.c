@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * add_node - main function
  * add_node:  add new node to the list

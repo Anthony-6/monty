@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * print_stack - print the stack from the top
  * @stack: the stack

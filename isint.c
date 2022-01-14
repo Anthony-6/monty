@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * isint - check in the line if a character is a integer or not
  * @str: pointer to the string

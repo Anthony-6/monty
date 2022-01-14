@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 #include <stdio.h>
 /**
  * check_tok - function to tokenize the line given by the file
