@@ -13,8 +13,13 @@ int check_tok(stack_t **stack, char *line, int line_number)
 {
 	instruction_t op_code[] = {{"push", add_node},
 				   {"pall", print_stack},
+				   {"pint", _pint},
+				   {"nop", _nop},
+				   {"swap", _swap},
+				   {"pop", _pop},
+				   {"add", _add},
 				   {NULL, NULL}};
-	int i = 0;
+	int i;
 	char *token_op_code, *token_value;
 
 	token_op_code = strtok(line, " \n");
