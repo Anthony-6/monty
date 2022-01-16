@@ -8,11 +8,13 @@
  */
 void _add(stack_t **stack, unsigned int line_number)
 {
-	stack_t *temp, *node = *stack;
-	unsigned int node_number = 0;
+	stack_t *temp, *node;
+	unsigned int node_number;
 	int result, counter;
 	(void)line_number;
 
+	node = *stack;
+	node_number = 0;
 	for (counter = 0; node != NULL; counter++)
 	{
 		node_number++;
