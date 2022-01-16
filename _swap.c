@@ -30,7 +30,7 @@ void _swap(stack_t **stack, unsigned int line_number)
 	{
 		node_1 = (*stack)->n;
 		node_2 = (*stack)->next->n;
-		(*stack)->n = node_1;
-		(*stack)->next->n = node_2;
+		(*stack)->n = node_2;
+		(*stack)->next->n = node_1;
 	}
 }
